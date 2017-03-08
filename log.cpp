@@ -40,10 +40,10 @@ void CLog::printString(string outString) {
 /*! Prints a formatted string in the log file
  */
 void CLog::printFormattedString(string &outString) {
-    char s[1];
+    char s[3];
 
     for (unsigned int i = 0; i < outString.size(); i++) {
-        sprintf(s, "%.2x", (unsigned char) outString[i]);
+        snprintf(s, 3, "%.2x", (unsigned char) outString[i]);
         m_Fs << "[" << hex << s << "] ";
     }
     m_Fs << dec << " - " << outString.size() << " bytes" << endl;

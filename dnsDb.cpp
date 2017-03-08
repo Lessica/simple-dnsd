@@ -83,7 +83,7 @@ void CDnsDb::parseLine(char *buffer) {
 
     do {
         address.erase();
-        // skip all possible spaces , ind_beg points to the first element
+        // skip all possible spaces, ind_beg points to the first element
         ind_beg = strAux.find_first_not_of(" \t");
         // from the first element, I am looking for the next space, then I will have the first string
         ind_end = strAux.find_first_of(" \t", ind_beg);
@@ -99,7 +99,10 @@ void CDnsDb::parseLine(char *buffer) {
         }
         // check if it is an ipv4 address
         struct sockaddr_in sa;
-        if (inet_pton(AF_INET, address.data(), &(sa.sin_addr)) != 0) {
+        if (inet_pton(AF_INET, address.data(), &(sa.sin_addr)) == 0) {
+            return;
+        }
+        if (inet_aton(address.data(), &inp)) {
             address_found = true;
         }
     } while (!address_found);
