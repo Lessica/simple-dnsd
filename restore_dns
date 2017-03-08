@@ -1,0 +1,2 @@
+cp /etc/dhclient.conf.orig /etc/dhclient.conf
+/etc/init.d/networking restart 

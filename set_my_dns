@@ -1,0 +1,3 @@
+cp /etc/dhclient.conf.dns /etc/dhclient.conf
+/etc/init.d/networking restart
+cp /etc/resolv.conf.dns /etc/resolv.conf

@@ -1,0 +1,46 @@
+#
+# hosts         This file describes a number of hostname-to-address
+#               mappings for the TCP/IP subsystem.  It is mostly
+#               used at boot time, when no name servers are running.
+#               On small systems, this file can be used instead of a
+#               "named" name server.
+# Syntax:
+#    
+# IP-Address  Full-Qualified-Hostname  Short-Hostname
+#
+
+127.0.0.1       localhost culebra
+127.0.0.2       mylaptop.ericsson.com mylaptop
+
+209.237.226.90  www.opensource.org
+198.182.196.56  www.linux.org
+212.170.238.90  www.nasa.gov
+212.170.238.9   www.esa.int
+18.7.22.69	web.mit.edu	www.mit.edu	mit.edu
+
+207.24.89.170   www.nationalgeographic.com
+203.166.59.31   www.lonelyplanet.com
+212.170.238.35  www.ericsson.com ericsson.com
+66.102.9.147    www.google.com google.com www.google.es google.es
+72.21.210.28	www.imdb.com
+
+128.214.14.118  phobos.astro.helsinki.fi
+193.166.3.1	www.nic.funet.fi
+147.243.3.68	www.nokia.fi nokia.fi
+130.233.240.9   www.hut.fi
+130.230.1.66    www.tut.fi
+
+212.0.125.95    www.lavanguardia.es
+193.180.17.140  www.ericsson.es	www.ericsson.com
+216.239.59.147  www.google.es
+212.170.238.80  www.elpais.es
+
+# special IPv6 addresses
+::1             localhost ipv6-localhost ipv6-loopback
+
+fe00::0         ipv6-localnet
+
+ff00::0         ipv6-mcastprefix
+ff02::1         ipv6-allnodes
+ff02::2         ipv6-allrouters
+ff02::3         ipv6-allhosts
