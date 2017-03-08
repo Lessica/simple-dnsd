@@ -97,13 +97,16 @@ void CDnsDb::parseLine(char *buffer) {
             // skip this line as it's a comment
             return;
         }
-        if (inet_aton(address.data(), &inp)) {
+        // check if it is an ipv4 address
+        struct sockaddr_in sa;
+        if (inet_pton(AF_INET, address.data(), &(sa.sin_addr)) != 0) {
             address_found = true;
         }
     } while (!address_found);
 
     // Now the the IP address has been found and I'm keeping the hostname
     // For now, let's assume there is only one name for each IP address
+
     ind_beg = strAux.find_first_not_of(" \t", ind_end + 1);
     ind_end = strAux.find_first_of(" \t", ind_beg);
     name = new string(strAux.substr(ind_beg, ind_end - ind_beg));

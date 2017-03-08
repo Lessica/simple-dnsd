@@ -39,70 +39,62 @@
 /*! Constructor
  */
 CQuestion::CQuestion()
-  : m_QName(),
-    m_QType(), 
-    m_QClass()
-{
+        : m_QName(),
+          m_QType(),
+          m_QClass() {
 }
 
 /*! Destructor
  */
-CQuestion::~CQuestion()
-{
+CQuestion::~CQuestion() {
 }
 
-void CQuestion::setQName(string& buffer)
-{
-  m_QName.erase(0, m_QName.size());
-  m_QName = buffer;
+void CQuestion::setQName(string &buffer) {
+    m_QName.erase(0, m_QName.size());
+    m_QName = buffer;
 }
 
-string& CQuestion::getQName()
-{
-  return m_QName;
+string &CQuestion::getQName() {
+    return m_QName;
 }
 
-bool CQuestion::setQType(string& qType)
-{
-  unsigned int value;
-  bool error = false;
+bool CQuestion::setQType(string &qType) {
+    char value;
+    bool error = false;
 
-  m_QType = qType;
+    m_QType = qType;
 
-  value = (qType[0]<<8) + qType[1];
-  // Check that the value is correct
-  switch ((CResourceRecord::TQType)value) {
-  case (CResourceRecord::A):
-  case (CResourceRecord::ALL):  
-    // Accepted
-    break;
-  default:
-    // Not implemented
-    error = true;
-    break;
-  }
-  return error;
+    value = (qType[0] << 8) + qType[1];
+    // Check that the value is correct
+    switch ((CResourceRecord::TQType) value) {
+        case (CResourceRecord::A):
+        case (CResourceRecord::ALL):
+            // Accepted
+            break;
+        default:
+            // Not implemented
+            error = true;
+            break;
+    }
+    return error;
 }
 
-string& CQuestion::getQType()
-{
-  return m_QType;
+string &CQuestion::getQType() {
+    return m_QType;
 }
 
-bool CQuestion::setQClass(string& qClass)
-{
-  unsigned int value;
-  bool error = false;
+bool CQuestion::setQClass(string &qClass) {
+    unsigned int value;
+    bool error = false;
 
-  m_QClass = qClass;
+    m_QClass = qClass;
 
-  value = (unsigned int) ((qClass[0] << 8) + qClass[1]);
-  // Check that the value is correct, IN & ANY accepted
-  error = ((CResourceRecord::TQClass)value == CResourceRecord::CH);
-  return error;
+    value = (unsigned int) ((qClass[0] << 8) + qClass[1]);
+    // Check that the value is correct, IN & ANY accepted
+    error = ((CResourceRecord::TQClass) value == CResourceRecord::CH);
+    return error;
 }
 
-string& CQuestion::getQClass()
-{
-  return m_QClass;
+string &CQuestion::getQClass() {
+    return m_QClass;
 }

@@ -87,6 +87,8 @@ public:
        the response it shouldn't be any incompatibility.
     */
     /* These types are defined in RFC 1035 */
+    /* This program does not support ipv6, which is defined in RFC 3596:
+     * https://www.ietf.org/rfc/rfc3596.txt */
     enum TQType {
         A = 1,   /**< a host address */
         NS = 2,
