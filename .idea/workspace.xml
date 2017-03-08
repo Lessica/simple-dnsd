@@ -12,39 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8a99cab-d9fd-4db9-ab3b-6a28e63f704a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dnsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dns.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/terminal.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/answer.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/answer.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dns.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dns.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dnsDb.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dnsDb.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dnsd.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/dhclient.conf.dns" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/files/resolv.conf.dns" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/header.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ip_hosts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/message.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/message.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/question.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/question.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/restore_dns" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rr.cpp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rr.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/set_my_dns" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dns.cpp" afterPath="$PROJECT_DIR$/dns.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dnsDb.cpp" afterPath="$PROJECT_DIR$/dnsDb.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dnsd.cpp" afterPath="$PROJECT_DIR$/dnsd.cpp" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -62,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dnsd.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dnsd.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dnsd.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
+            <state relative-caret-position="131">
+              <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -75,14 +45,14 @@
       <file leaf-file-name="dnsDb.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dnsDb.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="88" column="41" lean-forward="false" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
+            <state relative-caret-position="379">
+              <caret line="107" column="51" lean-forward="false" selection-start-line="107" selection-start-column="51" selection-end-line="107" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dns.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dns.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dns.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="71">
@@ -117,8 +87,8 @@
         <option value="$PROJECT_DIR$/message.cpp" />
         <option value="$PROJECT_DIR$/question.cpp" />
         <option value="$PROJECT_DIR$/answer.cpp" />
-        <option value="$PROJECT_DIR$/dnsDb.cpp" />
         <option value="$PROJECT_DIR$/dnsd.cpp" />
+        <option value="$PROJECT_DIR$/dnsDb.cpp" />
         <option value="$PROJECT_DIR$/dns.cpp" />
       </list>
     </option>
@@ -387,12 +357,12 @@
       <workItem from="1488963790307" duration="2364000" />
       <workItem from="1488966211404" duration="406000" />
       <workItem from="1488966917101" duration="46000" />
-      <workItem from="1488966977539" duration="2746000" />
+      <workItem from="1488966977539" duration="2808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5562000" />
+    <option name="totallyTimeSpent" value="5624000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,6 +643,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dnsd.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dnsDb.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="107" column="51" lean-forward="false" selection-start-line="107" selection-start-column="51" selection-end-line="107" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dns.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -680,22 +666,6 @@
           <folding>
             <element signature="e#706#722#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dnsDb.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="88" column="41" lean-forward="false" selection-start-line="88" selection-start-column="41" selection-end-line="88" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dnsd.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>

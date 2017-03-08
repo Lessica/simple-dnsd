@@ -63,7 +63,7 @@ void CDns::openCommunication() {
     server.sin_addr.s_addr = htonl(INADDR_ANY);
     server.sin_port = htons(DNS_PORT);
 
-    if (bind(m_Socket, (struct sockaddr *) &server, length) < 0) {
+    if (::bind(m_Socket, (struct sockaddr *) &server, length) < 0) {
         cerr << "Error binding socket" << endl;
         exit(0);
     }

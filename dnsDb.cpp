@@ -84,15 +84,15 @@ void CDnsDb::parseLine(char *buffer) {
     do {
         address.erase();
         // skip all possible spaces , ind_beg points to the first element
-        ind_beg = strAux.find_first_not_of(" ");
+        ind_beg = strAux.find_first_not_of(" \t");
         // from the first element, I am looking for the next space, then I will have the first string
-        ind_end = strAux.find_first_of(" ", ind_beg);
+        ind_end = strAux.find_first_of(" \t", ind_beg);
         // address it now contains the IP address
         if (ind_beg == ind_end) {
             // blank line
             return;
         }
-        address.append(strAux.substr(ind_beg, ind_end));
+        address.append(strAux.substr(ind_beg, ind_end - ind_beg));
         if (address[0] == '#') {
             // skip this line as it's a comment
             return;
@@ -104,8 +104,8 @@ void CDnsDb::parseLine(char *buffer) {
 
     // Now the the IP address has been found and I'm keeping the hostname
     // For now, let's assume there is only one name for each IP address
-    ind_beg = strAux.find_first_not_of(" ", ind_end + 1);
-    ind_end = strAux.find_first_of(" ", ind_beg);
-    name = new string(strAux.substr(ind_beg, ind_end));
+    ind_beg = strAux.find_first_not_of(" \t", ind_end + 1);
+    ind_end = strAux.find_first_of(" \t", ind_beg);
+    name = new string(strAux.substr(ind_beg, ind_end - ind_beg));
     m_Db[name->c_str()] = inp.s_addr;
 }

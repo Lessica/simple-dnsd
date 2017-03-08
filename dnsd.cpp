@@ -28,12 +28,12 @@
 using namespace std;
 
 // Main function
-int main(int argc, void *argv[]) {
+int main(int argc, char **argv) {
     string logFile;
 
     if (argc == 3) {
-        if (strcmp((char *) argv[1], "-f") == 0) {
-            string lf((char *) argv[2]);
+        if (strcmp(argv[1], "-f") == 0) {
+            string lf(argv[2]);
             logFile = lf;
         } else {
             cerr << "Usage: dnsd -f <log_file>" << endl;
